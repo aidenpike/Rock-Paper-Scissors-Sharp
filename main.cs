@@ -7,19 +7,16 @@ class Program {
         return rand.Next(3);
     }
 
-    string cpuOutput(int choice){
+    static string cpuOutput(int choice){
         switch (choice){
             case 1:
                 return "CPU chooses...rock!";
-            break;
 
             case 2:
                 return "CPU chooses...paper!";
-            break;
 
             case 3:
                 return "CPU chooses...scissors!";
-            break;
         }
         return "NULL";
     }
@@ -30,7 +27,7 @@ class Program {
 
         //Check choice
         if (choice == 1){
-            Console.WriteLine()
+            Console.WriteLine(cpuOutput(cpuChoice()));
         }
     }
 }
